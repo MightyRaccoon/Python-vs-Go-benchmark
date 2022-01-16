@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "admin"
+      POSTGRES_USER: "admin"
+      POSTGRES_DB: "test"
+
+  data_filler:
+    build:
+    container_name: 
+    depends_on:
+      - postgres
+    restart: "no"
+    environment:
+      - ROWS_COUNT=100000

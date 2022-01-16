@@ -1,0 +1,6 @@
+colorlog==6.5.0
+greenlet==1.1.2
+numpy==1.21.3
+psycopg2-binary==2.9.1
+SQLAlchemy==1.4.26
+tqdm==4.62.3
