@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS orders (
     customer_longitude DOUBLE PRECISION
 );
 
-CREATE INDEX IF NOT EXISTS order_dttm ON orders (created_at);
-
+CREATE INDEX IF NOT EXISTS order_dttm_idx ON orders (created_at);
+--CREATE INDEX IF NOT EXISTS order_id_idx ON orders (order_id);
 
 COMMIT;
